@@ -136,3 +136,11 @@ pub async fn list_versions(apps: Vec<(String, Option<String>)>) {
         println!("| Huawei AppGallery does not make old versions of apps available.");
     }
 }
+
+#[derive(Debug)]
+pub struct HuaweiAppGalleryOpts {
+    app_id: String,
+    output_dir: PathBuf,
+    service_country: Option<String>, // add this line
+    client_api_url: Option<String>, // add this line
+}
