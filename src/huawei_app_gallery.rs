@@ -144,3 +144,10 @@ pub struct HuaweiAppGalleryOpts {
     service_country: Option<String>, // add this line
     client_api_url: Option<String>, // add this line
 }
+
+pub struct HuaweiAppGalleryDownloader {
+    app_id: String,
+    output_dir: PathBuf,
+    service_country: String, // add this line
+    client_api_url: String, // add this line
+}
